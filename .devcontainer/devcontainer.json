@@ -1,1 +1,20 @@
-{\n  "name": "Collections - Spark Devcontainer",\n  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-20",\n  "forwardPorts": [5173],\n  "postCreateCommand": "npm ci",\n  "postStartCommand": "npm run dev -- --host",\n  "remoteUser": "vscode",\n  "customizations": {\n    "vscode": {\n      "extensions": [\n        "GitHub.copilot-chat",\n        "esbenp.prettier-vscode",\n        "dbaeumer.vscode-eslint"\n      ]\n    }\n  },\n  "settings": {\n    "terminal.integrated.shell.linux": "/bin/bash"\n  }\n}
+{
+  "name": "Collections - Spark Devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-20",
+  "forwardPorts": [5173],
+  "postCreateCommand": "npm ci",
+  "postStartCommand": "npm run dev -- --host",
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot-chat",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  }
+}
